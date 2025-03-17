@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0a192f;
+  --light: #ccd6f6;
+  --subtext: #8892b0;
+  --primary: #64ffda;
+  --highlight: #ccd6f6;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--light);
+  font-family: "Inter", sans-serif;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--subtext);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: var(--primary);
+}
+
+.nav-indicator {
+  width: 10px;
+  height: 2px;
+  background-color: var(--subtext);
+  margin-right: 12px;
+  transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.nav-link:hover .nav-indicator {
+  width: 25px;
+  background-color: var(--primary);
+}
+
+
+/* Navbar Styling
+.nav-link {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--subtext);
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: var(--highlight);
+}
+
+.nav-indicator {
+  display: inline-block;
+  width: 8px;
+  height: 2px;
+  background-color: var(--subtext);
+  margin-right: 10px;
+  transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.nav-link:hover .nav-indicator {
+  width: 20px;
+  background-color: var(--highlight);
+}
+
+/* Social Icons */
+/* .social-icon {
+  font-size: 1.25rem;
+  color: var(--subtext);
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+  color: var(--highlight);
+} */ 

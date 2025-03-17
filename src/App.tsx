@@ -7,17 +7,16 @@ import Contact from "../src/components/Contact";
 
 const App = () => {
   return (
-    <div className="grid grid-cols-12 gap-2">
-      <div className="col-span-4 mx-auto">
-      <Navbar />
+    <div className="flex">
+      <div className="fixed w-1/4 h-screen">
+        <Navbar />
       </div>
-      
-      <div className="col-span-6">
-      <Hero />
-      <About />
-      <Experience />
-      <Projects />
-      <Contact />
+      <div className="w-3/4 ml-[25%]">
+        <Hero />
+        <About />
+        <Experience />
+        <Projects />
+        <Contact />
       </div>
     </div>
   );

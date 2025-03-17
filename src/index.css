@@ -8,12 +8,17 @@
   --subtext: #8892b0;
   --primary: #64ffda;
   --highlight: #ccd6f6;
+  --link:#e4ed63;
 }
 
 body {
   background-color: var(--background);
   color: var(--light);
   font-family: "Inter", sans-serif;
+}
+nav {
+  /* Remove border-r */
+  background-color: var(--background);
 }
 
 .nav-link {
@@ -23,7 +28,8 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--subtext);
-  transition: all 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer; /* Add hand cursor */
 }
 
 .nav-link:hover {
@@ -31,7 +37,8 @@ body {
 }
 
 .nav-indicator {
-  width: 10px;
+  display: inline-block;
+  width: 20px; /* Longer default length */
   height: 2px;
   background-color: var(--subtext);
   margin-right: 12px;
@@ -39,47 +46,15 @@ body {
 }
 
 .nav-link:hover .nav-indicator {
-  width: 25px;
+  width: 40px; /* Extends further on hover */
   background-color: var(--primary);
 }
-
-
-/* Navbar Styling
-.nav-link {
-  display: flex;
-  align-items: center;
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--subtext);
-  transition: color 0.3s ease-in-out;
-}
-
-.nav-link:hover {
-  color: var(--highlight);
-}
-
-.nav-indicator {
-  display: inline-block;
-  width: 8px;
-  height: 2px;
-  background-color: var(--subtext);
-  margin-right: 10px;
-  transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
-}
-
-.nav-link:hover .nav-indicator {
-  width: 20px;
-  background-color: var(--highlight);
-}
-
-/* Social Icons */
-/* .social-icon {
-  font-size: 1.25rem;
+.social-icon {
+  font-size: 1.5rem; /* Increased size for visibility */
   color: var(--subtext);
   transition: color 0.3s ease-in-out;
 }
 
 .social-icon:hover {
-  color: var(--highlight);
-} */ 
+  color: var(--primary);
+}

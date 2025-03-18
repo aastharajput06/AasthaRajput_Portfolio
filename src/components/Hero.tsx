@@ -8,7 +8,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex flex-col justify-center pl-[30%] pr-10">
+    <section id="hero" className="min-h-screen flex flex-col justify-center pl-[30%] pr-10">
       <motion.h1 {...fadeIn} className="text-primary text-5xl font-bold">
         Hi, I’m Aastha Rajput
       </motion.h1>
